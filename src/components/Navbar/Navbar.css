@@ -74,7 +74,7 @@ body{
 }
 
 .nav-login-cart button:active {
-    background-color: #f3f3f3;
+    background-color: #5899F2;
 }
 
 .nav-cart-count {
@@ -91,3 +91,6 @@ body{
     color: white;
 }
 
+.link:visited {
+    color: #626262;
+}

@@ -19,10 +19,10 @@ const Navbar = () => {
         </div>
 
         <ul className="nav-menu">
-        <li onClick={() => {setActive("Main")}}><Link to="/" style={style}>Main</Link>{active === "Main"? <hr/> : null}</li>
-          <li onClick={() => {setActive("Men's Shoes")}}><Link to="/shoes" style={style}>Men's Shoes</Link> {active === "Men's Shoes"? <hr/> : null}</li>
-          <li onClick={() => {setActive("Men's Jackets")}}><Link to="/jackets" style={style}>Men's Jackets</Link>{active === "Men's Jackets"? <hr/> : null}</li>
-          <li onClick={() => {setActive("About")}}><Link to="/about-us" style={style}>About</Link> {active === "About"? <hr/> : null}</li>
+        <li onClick={() => {setActive("Main")}}><Link to="/" style={style} className='link'>Main</Link>{active === "Main"? <hr/> : null}</li>
+          <li onClick={() => {setActive("Men's Shoes")}}><Link to="/shoes" style={style} className='link'>Men's Shoes</Link> {active === "Men's Shoes"? <hr/> : null}</li>
+          <li onClick={() => {setActive("Men's Jackets")}}><Link to="/jackets" style={style} className='link'>Men's Jackets</Link>{active === "Men's Jackets"? <hr/> : null}</li>
+          <li onClick={() => {setActive("About")}}><Link to="/about-us" style={style} className='link'>About</Link> {active === "About"? <hr/> : null}</li>
         </ul>
 
         <div className="nav-login-cart">
