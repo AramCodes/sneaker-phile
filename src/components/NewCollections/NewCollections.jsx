@@ -20,8 +20,10 @@ const NewCollections = () => {
     <div className='new-collections'>
         <h1>New Collection</h1>
         <hr />
-
-        <div className="collections"></div>
+        
+        <div className="collections">
+            {collection}
+        </div>
     </div>
   )
 }

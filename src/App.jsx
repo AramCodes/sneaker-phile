@@ -8,6 +8,8 @@ import About from "./pages/About/About"
 import Cart from "./pages/Cart/Cart"
 import LoginSignup from "./pages/LoginSignUp/LoginSignup"
 import Product from "./pages/Product/Product"
+import Footer from "./components/Footer/Footer"
+
 
 function App() {
   
@@ -32,6 +34,7 @@ function App() {
 
 
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )
