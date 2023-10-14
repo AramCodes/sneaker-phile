@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+:root {
+    --bg-color: #fff;
+    --text-color:#111;
+    --primary-color:#1DA7A8;    
+    --secondary-color:#595959; 
+    --tertiary-color:white;  
+    --cta-color:#305148;       
+    --big-font: 4.5rem;
+    --h2-font-size:2.25rem;
+    --h4-font-size:1.5rem;
+    --normal-font-size:1.2rem;
+    --secondary-font-size:1.5rem;
+    --third-font-size:1.25rem;
+    --primary-font-stack:'Open Sans', sans-serif;
+    --secondary-font-stack:'Permanent Marker', 'Roboto';
+}
+
+.about-section {
+    margin-top: -65px;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+.about-section h1 {
+    margin: 4rem 0 1.5rem;
+    text-align: center;
+    font-size: var(--big-font);
+    font-family: var(--secondary-font-stack);
+}
+
+.about-section p {
+    text-align: center;
+    font-size: var(--normal-font-size);
+    max-width: 70ch;
+    margin: 0 auto;
+}
+
+.about-section h4 {
+    margin: 1.5rem 0;
+    text-align: center;
+    font-size: var(--h4-font-size);
+    font-family: var(--secondary-font-stack);
+}
+
+.about-section h2 {
+    text-align:center;
+    margin: 50px auto 50px auto;
+    font-size: 2.5rem;
+    font-family: 'Permanent Marker';
+} 
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    margin: 150px 0;
+} 
+
+.container .column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.container .card {
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    background-color: #fff;
+}
+
+.container .card .title {
+    color: grey;
+    font-family: var(--secondary-font-stack);
+    font-size: 1.5rem;
+}
+
+.container .card p {
+    font-size: var(--third-font-size);
+}
+
+.container {
+    padding: 0 40px;
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container h2 {
+    color: #000;
+    margin-top: 0;
+}
+
+.email {
+    color: var(--primary-color);
+    font-size: 1.125em;
+}
+
+.container .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 15px 45px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--cta-color);
+    border-radius: 5px;
+    margin: 20px auto;
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.container .button:hover {
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+    border: 2px solid var(--cta-color);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pic {
+    width: 100%;
+}

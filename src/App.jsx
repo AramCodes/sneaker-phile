@@ -9,6 +9,8 @@ import Cart from "./pages/Cart/Cart"
 import LoginSignup from "./pages/LoginSignUp/LoginSignup"
 import Product from "./pages/Product/Product"
 import Footer from "./components/Footer/Footer"
+import shoeBanner from './assets/images/shoes-banner.jpg'
+import jacketBanner from './assets/images/jacket-banner.jpg'
 
 
 function App() {
@@ -19,8 +21,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Main />}/>
-          <Route path="/shoes" element={<Category category="men's shoes"/>}/>
-          <Route path="/jackets" element={<Category category="men's jackets"/>}/>
+          <Route path="/shoes" element={<Category category="shoes" banner={shoeBanner} />} />
+          <Route path="/jackets" element={<Category category="jackets" banner={jacketBanner} />}/>
           <Route path="/about-us" element={<About />}/>
 
           {/* Route for products */}

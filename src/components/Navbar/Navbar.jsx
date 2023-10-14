@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
-  const [active, setActive] = React.useState("Men's Shoes")
+  const [active, setActive] = React.useState("Main")
 
   const style = { textDecoration: "none"}
 
