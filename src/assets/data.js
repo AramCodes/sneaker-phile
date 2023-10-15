@@ -27,7 +27,7 @@ let data_product = [
     quantity: 0,
     inventory: 10,
     image:p3_img,
-    description:"The Air Jordan 13 is important to Air Jordan history, as it is the model Jordan wore during his last season in Chicago on the way to a sixth title. Even without this historic fact, the 13 would still be considered one of the greatest Air Jordans ever thanks to its strong design alone. Jordan collectors treasure the sleek silhouette, unique quilted upper in premium materials, and excellent comfort achieved with a plush upper and Zoom Air cushioning in the sole. Available here at Foot Locker in Boys’ Grade School sizing, add this essential sneaker to your collection today."
+    description:"The Air Jordan 13 is important to Air Jordan history, as it is the model Jordan wore during his last season in Chicago on the way to a sixth title. Even without this historic fact, the 13 would still be considered one of the greatest Air Jordans ever thanks to its strong design alone."
   },
   {id:27,
     name:"Nike Winbreaker",

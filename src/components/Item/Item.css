@@ -1,5 +1,6 @@
 .item {
-    width: 400px;
+    height: 780px;
+    width: 420px;
     border: 2px solid black;
     border-radius: 5px;
 }
@@ -31,5 +32,9 @@
 .desc {
     padding: 20px;
     width: 50ch;
+    color: #374151;
+}
+
+a {
     color: #374151;
 }

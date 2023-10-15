@@ -6,12 +6,8 @@ import ShopContextProvider from './Context/ShopContext.jsx';
 
 const root = document.getElementById('root');
 
-ReactDOM.createRoot(root).render(
-  <React.StrictMode>
-    
+ReactDOM.createRoot(root).render(   
     <ShopContextProvider>
       <App />
     </ShopContextProvider>
-    
-  </React.StrictMode>
 )

@@ -10,9 +10,9 @@ const About = () => {
         <h1>About Us</h1>
 
         <p>Our shoe company was founded in 2014 by 2 college roommates. We started with the humble mission of being the go to spot for high quality
-        shoes. Within five years of operating we expanded to jacket and, we've built a portfolio we're very proud of  and we have become one of the most-trusted athletic 
-        footwear chains in the United States. With such success,we are happy to share our plan to launch 5 brick and mortar stores in 2024 and 
-        increase our e-commerce division's footprint.</p>
+        shoes, within five years of operating we expanded to to sell jackets and, we've built a portfolio we're very proud of  and we have become 
+        one of the most-trusted athletic footwear chains in the United States. With such success, we are happy to share our plan to launch 5 brick 
+        and mortar stores in 2024 and increase our e-commerce division footprint.</p>
 
         <h4>Our Mission Statement</h4>
         <p>To provide the highest quality craftsmanship and best customer service possible every day, with every customer, and with every pair of shoes.</p>
@@ -32,7 +32,7 @@ const About = () => {
                 <h2>Aram Valcourt</h2>
                 <p className="title">CEO & Founder</p>
                 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>avalcourt<span className="email">@sneakerheadz.com</span></p>
+                <p>avalcourt<span className="email">@sneakerphile.com</span></p>
                 <p><button className="button">Contact</button></p>
               </div>
             </div>

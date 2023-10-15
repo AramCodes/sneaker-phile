@@ -36,7 +36,7 @@
 
 
 .desc {
-    font-size: .80rem;
+    font-size: .8rem;
 }
 
 .popular-item-image {
@@ -47,5 +47,5 @@
 .popular .item {
     border: 2px solid black;
     border-radius: 5px;
-    width: 355px;
+    width: 450px;
 }

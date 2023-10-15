@@ -26,8 +26,8 @@ const Navbar = () => {
         </ul>
 
         <div className="nav-login-cart">
-            <Link to="/login"><button>Login</button></Link>
-            <Link to="/cart"><img src={cartIcon} alt="your shopping cart" /></Link>
+            <Link to="/login" onClick={() => {setActive("")}}><button>Login</button></Link>
+            <Link to="/cart" onClick={() => {setActive("")}}><img src={cartIcon} alt="your shopping cart" /></Link>
             <span className='nav-cart-count'>0</span>
         </div>
       

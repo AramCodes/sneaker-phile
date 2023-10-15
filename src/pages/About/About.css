@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
@@ -19,14 +18,13 @@ body {
     --primary-color:#1DA7A8;    
     --secondary-color:#595959; 
     --tertiary-color:white;  
-    --cta-color:#305148;       
+    --cta-color:#5899E2;       
     --big-font: 4.5rem;
     --h2-font-size:2.25rem;
     --h4-font-size:1.5rem;
     --normal-font-size:1.2rem;
     --secondary-font-size:1.5rem;
     --third-font-size:1.25rem;
-    --primary-font-stack:'Open Sans', sans-serif;
     --secondary-font-stack:'Permanent Marker', 'Roboto';
 }
 

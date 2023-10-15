@@ -2,14 +2,13 @@ import React, { useContext } from 'react'
 import './Category.css'
 import { ShopContext } from '../../Context/ShopContext'
 import dropdownIcon from '../../assets/images/dropdown_icon.png'
-import all_product from '../../assets/all_product'
 import Item from '../../components/Item/Item'
 
 
 const Category = (props) => {
   const {allProduct} = useContext(ShopContext)
 
-  const products = all_product.map( (item, i) => {
+  const products = allProduct.map( (item, i) => {
     if (props.category === item.category) {
       return <Item 
       key={i}
