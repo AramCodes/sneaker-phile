@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+/*///////////////////*/
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+  width: 25px;
+}
+
+::-webkit-scrollbar-track {
+  background: #5899E2;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(150deg,#FFFFFF,#5899E2 80%);
+  border: 0.25em solid #c7c7c7;
+  border-radius: 10vw;
+}
