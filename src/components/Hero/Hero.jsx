@@ -16,7 +16,7 @@ const Hero = () => {
                     <img src={handIcon} alt="waving hand" />
                 </div>
 
-                <p>Collections</p>
+                <p>Collection</p>
                 <p>for Men</p>
             </div>
 

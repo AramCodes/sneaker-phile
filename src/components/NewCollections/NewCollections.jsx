@@ -13,6 +13,7 @@ const NewCollections = () => {
               image={item.image}
               price={item.price}
               description={item.description}
+              item={item}
               />
     })
 

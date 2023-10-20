@@ -5,7 +5,7 @@
     margin: auto;
     padding: 0 140px;
     margin-bottom: 150px;
-    background: linear-gradient(180deg,#5899E2, #FFFFFF 60%);
+    background: linear-gradient(180deg,#5899E2, #FFFFFF 90%);
 }
 
 .offers-left {
@@ -46,4 +46,49 @@
     align-items: center;
     justify-content: flex-end;
     padding-top: 50px;
+}
+
+@media screen and (max-width: 1550px){
+    .offers {
+        flex-direction: column;
+        height: 120vh;
+    }
+
+    .offers-left {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -150px;
+    }
+
+    .offers-right {
+        justify-content: flex-start;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 1030px){
+    .offers {
+        width: 85%;
+    }
+
+    .offers-right {
+        justify-content: flex-start;
+        padding-top: 60px;
+        margin-left: -150px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .offers-left h1 {
+        font-size: 3.5rem;
+    }
+
+    .offers-left p {
+        font-size: 1.25rem;
+        width: 20ch;
+    }
+
+    .offers-right {
+        margin-left: -200px;
+    }
 }

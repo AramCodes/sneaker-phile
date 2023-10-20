@@ -59,3 +59,27 @@
 .newsletter div button:hover {
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 775px) {
+    
+    .newsletter h1 {
+        font-size: 3rem;
+        width: 15ch;
+    }
+
+    .newsletter p {
+        width: 25ch;
+    }
+
+    .newsletter div {
+        width: 450px;
+    }
+
+    .newsletter input {
+        width: 300px;
+    }
+
+    .newsletter div button {
+        width: 160px;
+    }
+}

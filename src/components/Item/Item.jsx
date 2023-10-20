@@ -4,8 +4,12 @@ import { Link } from 'react-router-dom'
 
 const Item = (props) => {
 
+  function scrollToTop() {
+    window.scrollTo(0,0)
+  }
+
   return (
-    <Link to={`/product/${props.id}`}>
+    <Link to={`/product/${props.id}`} onClick={scrollToTop}>
       <div className='item'>
           
           <img src={props.image} alt={`picture of ${props.name}`} className='item-image'/>

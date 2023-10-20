@@ -23,5 +23,18 @@
     text-align: center;
     margin-top: 50px;
     display: flex;
-    gap: 60px;
+    gap: 50px;
+}
+
+@media screen and (max-width: 1990px) {
+    .popular {
+        height: 280vh;
+    }
+
+    .popular-item {
+        gap: 50px;
+        flex-wrap: wrap;
+        margin-left: 50%;
+        margin-right: 50%;
+    }
 }

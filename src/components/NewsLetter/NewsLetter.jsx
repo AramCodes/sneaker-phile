@@ -8,7 +8,7 @@ const NewsLetter = () => {
         <p>Subscribe to our newsletter and stay updated</p>
 
         <div>
-            <input type="email" placeholder='enter your email address'/>
+            <input name="email" type="email" placeholder='enter your email address' autoComplete='email'/>
             <button>Subscribe</button>
         </div>
     </div>

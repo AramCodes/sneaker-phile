@@ -94,3 +94,67 @@ body{
 .link:visited {
     color: #626262;
 }
+
+.toggle-button {
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    display: none; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #5899F2;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1060px) {
+
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .link {
+        /* display: none; */
+        width: 100%;
+    }
+
+    .nav-login-cart {
+        margin-top: 30px;
+        display: none;
+        width: 100%;
+        gap: 30px;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-cart-count {  
+        margin-top: -83px;
+        margin-left: 37px;
+    }
+
+    .nav-login-cart.active {
+        display: flex;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+}    

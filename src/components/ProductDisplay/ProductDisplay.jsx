@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './ProductDisplay.css'
 import starIcon from '../../assets/images/star_icon.png'
 import dullStar from '../../assets/images/star_dull_icon.png'
+import { ShopContext } from '../../Context/ShopContext'
+import { useCart } from 'react-use-cart'
+
 
 const ProductDisplay = (props) => {
 
     const {product} = props;
+
+    const {addItem} = useCart();
+    // const {addToCart} = useContext(ShopContext)
 
   return (
     <div className='product-display'>
@@ -44,17 +50,26 @@ const ProductDisplay = (props) => {
             <div className="product-display-right-size">
                 <h2>Select Size</h2>
                 <div className='product-display-right-sizes'>
-                    <div className='size disabled'>7</div>
-                    <div className='size'>8</div>
-                    <div className='size'>9</div>
-                    <div className='size'>10</div>
-                    <div className='size'>11</div>
-                    <div className='size'>12</div>
-                    <div className='size'>13</div>
+                    {product.category === "Shoes" && <div className='size disabled'>7</div>}
+                    {product.category === "Shoes" && <div className='size'>8</div>}
+                    {product.category === "Shoes" && <div className='size'>9</div>}
+                    {product.category === "Shoes" && <div className='size'>10</div>}
+                    {product.category === "Shoes" && <div className='size'>11</div>}
+                    {product.category === "Shoes" && <div className='size'>12</div>}
+                    {product.category === "Shoes" && <div className='size'>13</div>}
+
+                    {product.category === "Jackets" && <div className='size'>XS</div>}
+                    {product.category === "Jackets" && <div className='size'>S</div>}
+                    {product.category === "Jackets" && <div className='size'>M</div>}
+                    {product.category === "Jackets" && <div className='size'>L</div>}
+                    {product.category === "Jackets" && <div className='size'>XL</div>}
+                    {product.category === "Jackets" && <div className='size'>XXL</div>}
+                    {product.category === "Jackets" && <div className='size disabled'>XXXL</div>}
                 </div>
             </div>
 
-            <button>Add to Cart</button>
+
+            <button onClick={() => {addItem(props.item)}}>Add to Cart</button>
             <p className='product-display-right-category'><span>Category :</span> {`Men's ${product.category}`}</p>
         </div>
     </div>
