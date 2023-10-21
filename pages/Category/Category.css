@@ -1,0 +1,121 @@
+.shop-banner-area {
+    background: linear-gradient(180deg, #FFFFFF, #5899E2 80%);
+    margin-bottom: 20px;
+}
+
+.shopcategory-banner {
+    height: 375px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.shopcategory-indexSort {
+    display: flex;
+    margin: 0 170px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopcategory-indexSort p span {
+    font-weight: 600;
+}
+
+.shopcategory-sort {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.shopcategory-sort img {
+    height: auto;
+    width: auto;
+}
+
+.shopcategory-products {
+    margin: 20px 80px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+.shopcategory-load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width: 250px;
+    height: 70px;
+    border-radius: 75px;
+    background: #ededed;
+    color: #787878;
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 2450px) {
+    .shopcategory-products {
+        margin: 30px 150px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .shopcategory-products {
+        margin: 30px 100px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .shopcategory-products {
+        margin: 30px 100px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .shopcategory-products {
+        margin: 30px 250px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .shopcategory-products {
+        margin: 30px 25%;
+        grid-template-columns: 1fr;
+    }
+    
+    .shopcategory-products .item {
+        place-self: center;
+    }
+}    
+
+@media screen and (max-width: 720px) {
+    .shopcategory-indexSort p {
+        width: 11ch;
+    }
+}    
+
+@media screen and (max-width: 600px) {
+    .shopcategory-products {
+        margin: 30px 30px;
+        grid-template-columns: 1fr;
+    }
+    
+    .shopcategory-products .item {
+        place-self: center;
+    }
+
+    .shopcategory-sort {
+        margin-left: 40px;
+        gap: 10px;
+    }
+}    
