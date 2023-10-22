@@ -11,7 +11,7 @@ const Breadcrumbs = (props) => {
             Home <img src={arrowIcon} alt="breadcrumb arrow" /> 
             Shop <img src={arrowIcon} alt="breadcrumb arrow" /> 
             {product.category} <img src={arrowIcon} alt="breadcrumb arrow" />
-            {product.name} 
+            <p>{product.name}</p>
         </div>
     )
 }

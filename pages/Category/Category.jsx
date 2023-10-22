@@ -16,6 +16,10 @@ const Category = (props) => {
     setItemsPerPage( itemsPerPage + 20)
   }
 
+  // const sortByPrice = () => {
+
+  // }
+ 
   const products = items.slice(0, itemsPerPage).map( (item, i) => {
     if (props.category === item.category) {
         return <Item 
@@ -44,7 +48,7 @@ const Category = (props) => {
             <span>Showing 1-{itemsPerPage / 2}</span> out of 20 products
           </p>
           <div className="shopcategory-sort">
-              <p>Sort by</p>  <img src={dropdownIcon} alt="dropdown" className='category-drop-down'/>
+              <p>Sort by price</p>  <img src={dropdownIcon} alt="dropdown" className='category-drop-down'/>
           </div>
         </div>
         <div className="shopcategory-products">

@@ -7,3 +7,11 @@
     font-weight: 600;
     padding: 20px 40px;
 }
+
+@media screen and (max-width:700px){
+    .breadcrumbs p {
+        color: black;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
