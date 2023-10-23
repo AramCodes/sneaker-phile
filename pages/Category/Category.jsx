@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './Category.css'
 import { ShopContext } from '../../Context/ShopContext'
 import dropdownIcon from '../../assets/images/dropdown_icon.png'
@@ -13,13 +13,20 @@ const Category = (props) => {
   const [itemsPerPage, setItemsPerPage] = useState(20);
 
   const loadMore = () => {
-    setItemsPerPage( itemsPerPage + 20)
+    if(itemsPerPage < 40) {
+      setItemsPerPage( itemsPerPage + 20)
+    }
   }
 
-  // const sortByPrice = () => {
+  const sortByPriceAsc = () => {
+    items.sort( (a, b) => {
+      if (a.price > b.price) return 1
+      if (a.price < b.price) return -1
+      return 0
+      })
+      setItems([...items])
+  }
 
-  // }
- 
   const products = items.slice(0, itemsPerPage).map( (item, i) => {
     if (props.category === item.category) {
         return <Item 
@@ -47,7 +54,7 @@ const Category = (props) => {
           <p>
             <span>Showing 1-{itemsPerPage / 2}</span> out of 20 products
           </p>
-          <div className="shopcategory-sort">
+          <div className="shopcategory-sort" onClick={sortByPriceAsc}>
               <p>Sort by price</p>  <img src={dropdownIcon} alt="dropdown" className='category-drop-down'/>
           </div>
         </div>

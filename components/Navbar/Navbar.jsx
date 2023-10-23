@@ -29,7 +29,7 @@ const Navbar = () => {
         </ul>
 
         <div className={`nav-login-cart ${menuOpen ? "active": null}`}>
-            <Link className='login' to="/login" onClick={() => {setActive("")}}><button>Login</button></Link>
+            <Link className='login' to="/login" onClick={() => {setActive("")}}><button>Log In</button></Link>
             <Link className='cart' to="/cart" onClick={() => {setActive("")}}><img src={cartIcon} alt="your shopping cart" /></Link>
             <span className='nav-cart-count'>{totalItems}</span>
         </div>

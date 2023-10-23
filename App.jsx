@@ -6,7 +6,8 @@ import Main from './pages/Main/Main'
 import Category from './pages/Category/Category'
 import About from "./pages/About/About"
 import Cart from "./pages/Cart/Cart"
-import LoginSignup from "./pages/LoginSignUp/LoginSignup"
+import Signup from "./pages/SignUp/Signup"
+import Login from "./pages/Login/Login"
 import Product from "./pages/Product/Product"
 import Footer from "./components/Footer/Footer"
 import shoeBanner from './assets/images/shoes-banner.jpg'
@@ -32,7 +33,8 @@ function App() {
 
           {/* Route for Cart and Login/Sign up*/}
           <Route path="/cart" element={<Cart />}/>
-          <Route path="/login" element={<LoginSignup />}/>
+          <Route path="/sign-up" element={<Signup />}/>
+          <Route path="/login" element={<Login />}/>
 
 
         </Routes>

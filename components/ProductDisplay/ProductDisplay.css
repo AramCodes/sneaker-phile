@@ -1,3 +1,8 @@
+:root {
+    --toastify-color-dark: #5899E2;
+    --toastify-toast-min-height: 25px;
+}
+
 .product-display {
     display: flex;
     margin: 50px 150px;

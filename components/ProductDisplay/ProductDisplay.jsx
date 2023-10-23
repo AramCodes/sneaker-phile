@@ -1,16 +1,33 @@
 import React  from 'react'
-import './ProductDisplay.css'
 import starIcon from '../../assets/images/star_icon.png'
 import dullStar from '../../assets/images/star_dull_icon.png'
+//Cart NPM
 import { useCart } from 'react-use-cart'
 
+//Toastify NPM
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+//CSS specificity
+import './ProductDisplay.css'
 
 const ProductDisplay = (props) => {
 
     const {product} = props;
 
     const {addItem} = useCart();
-    // const {addToCart} = useContext(ShopContext)
+
+    const notify = () => {
+        toast.success(`added to cart`, {
+            position: "top-center",
+            autoClose: 3500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            });
+    }
 
   return (
     <div className='product-display'>
@@ -71,8 +88,9 @@ const ProductDisplay = (props) => {
             </div>
 
 
-            <button onClick={() => {addItem(props.item)}}>Add to Cart</button>
+            <button onClick={() => {addItem(props.item); notify();}}>Add to Cart</button>
             <p className='product-display-right-category'><span>Category :</span> {`Men's ${product.category}`}</p>
+            <ToastContainer />
         </div>
     </div>
   )
